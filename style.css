@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #003366;
+    padding: 15px;
+    color: white;
+}
+.carousel-item img {
+    max-height: 350px;
+    object-fit: cover;
+  }
+.logo img {
+    width: 120px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+/* Hero */ 
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: url('background.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.cta-btn {
+    padding: 10px 20px;
+    background: #ffcc00;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.service-card {
+    width: 30%;
+    background: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.service-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+/* Community Festival Styles */
+.festival-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .festival-img {
+    height: 400px;
+    object-fit: cover;
+  }
+  /* Resident Services styles */
+  body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  h1, h2, h4 {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .service-box {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: 0.3s;
+  }
+  
+  .service-box:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  }
+  
+  .service-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #003366;
+  }
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #003366;
+    color: white;
+    margin-top: 20px;
+}
+#searchInput {
+    max-width: 300px;
+  }
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background: #003366;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #menu-toggle:checked + .menu-icon + nav .nav-links {
+        display: flex;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Finance Department - Macon County</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    h1, h2, h3, h5 {
+      font-family: 'Montserrat', sans-serif;
+    }
+    .card h5 {
+      color: #003366;
+    }
+    .section-icon {
+      font-size: 2rem;
+      color: #003366;
+    }
+  </style>
+</head>
+<body style="font-family: 'Open Sans', sans-serif;">
+
+  <!-- Header/Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <img src="img/logo.png" alt="Macon County Logo" height="70" class="mb-4">
+    <a class="navbar-brand" href="index.html"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+
+        <!-- Home -->
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+
+        <!-- Government Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Government
+          </a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-header">Departments</li>
+            <li><a class="dropdown-item" href="finance.html">Finance</a></li>
+            <li><a class="dropdown-item" href="Public Works.html">Public Works</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li class="dropdown-header">Elected Officials</li>
+            <li><a class="dropdown-item" href="#">County Commissioners</a></li>
+            <li><a class="dropdown-item" href="#">Sheriff’s Office</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Policies</a></li>
+          </ul>
+        </li>
+
+        <!-- Community Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Community
+          </a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-header">Events</li>
+            <li><a class="dropdown-item" href="community.html">Local Festivals</a></li>
+            <li><a class="dropdown-item" href="public-meetings.html">Public Meetings</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li class="dropdown-header">Business Resources</li>
+            <li><a class="dropdown-item" href="#">Licensing Information</a></li>
+            <li><a class="dropdown-item" href="#">Business Grants</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Economic Development</a></li>
+          </ul>
+        </li>
+
+        <!-- Residents -->
+        <li class="nav-item">
+          <a class="nav-link" href="residents.html">Residents</a>
+        </li>
+
+        <!-- Visitors -->
+        <li class="nav-item">
+          <a class="nav-link" href="visitors.html">Visitors</a>
+        </li>
+
+        <!-- Contact -->
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Page Content -->
+<main class="container my-5">
+  <h1 class="mb-4 text-center">Finance Department</h1>
+  <p class="lead text-center">Responsible for budgeting, financial reporting, payroll, procurement, and ensuring fiscal accountability for all county operations.</p>
+
+  <div class="row g-4 mt-4">
+    <!-- Budget -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <div class="section-icon mb-2">📊</div>
+          <h5 class="card-title">Budget & Reports</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">FY 2024–2025 Approved Budget</a></li>
+            <li><a href="#">Previous Budgets</a></li>
+            <li><a href="#">Annual Financial Report</a></li>
+            <li><a href="#">Audit Reports</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Payroll -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <div class="section-icon mb-2">💼</div>
+          <h5 class="card-title">Payroll & Vendor Info</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Payroll Calendar</a></li>
+            <li><a href="#">Direct Deposit Form</a></li>
+            <li><a href="#">Vendor Registration</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Procurement -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <div class="section-icon mb-2">📝</div>
+          <h5 class="card-title">Procurement & Bidding</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Current Bid Opportunities</a></li>
+            <li><a href="#">Purchasing Policies</a></li>
+            <li><a href="#">Submit a Bid</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Info -->
+  <div class="mt-5">
+    <h3>Contact Finance Department</h3>
+    <p> 5 W Main St, Franklin, NC 28734</p>
+    <p>(828) 349-2020</p>
+    <p><a href="mailto:finance@maconnc.org">finance@maconnc.org</a></p>
+    <p><strong>Hours:</strong> Monday – Friday, 8:00 AM – 5:00 PM</p>
+  </div>
+
+  <p class="mt-3"><em>Macon County is committed to transparency in fiscal operations. All documents listed here are available to the public upon request.</em></p>
+</main>
+
+<!-- Footer -->
+<footer class="bg-dark text-light text-center p-4 mt-5">
+  <p>&copy; 2025 Macon County. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

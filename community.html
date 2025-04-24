@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Local Festivals - Macon County</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+ 
+<body>
+
+  <!-- Header/Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Main navigation">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html" aria-label="Macon County Home">
+      <img src="img/logo.png" alt="Macon County official logo" height="70" class="me-2">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+
+        <!-- Home -->
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+
+        <!-- Government Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Government
+          </a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-header">Departments</li>
+            <li><a class="dropdown-item" href="finance.html">Finance</a></li>
+            <li><a class="dropdown-item" href="Public Works.html">Public Works</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li class="dropdown-header">Elected Officials</li>
+            <li><a class="dropdown-item" href="#">County Commissioners</a></li>
+            <li><a class="dropdown-item" href="#">Sheriff’s Office</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Policies</a></li>
+          </ul>
+        </li>
+
+        <!-- Community Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Community
+          </a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-header">Events</li>
+            <li><a class="dropdown-item" href="community.html">Local Festivals</a></li>
+            <li><a class="dropdown-item" href="public-meetings.html">Public Meetings</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li class="dropdown-header">Business Resources</li>
+            <li><a class="dropdown-item" href="#">Licensing Information</a></li>
+            <li><a class="dropdown-item" href="#">Business Grants</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Economic Development</a></li>
+          </ul>
+        </li>
+
+        <!-- Residents -->
+        <li class="nav-item">
+          <a class="nav-link" href="residents.html">Residents</a>
+        </li>
+
+        <!-- Visitors -->
+        <li class="nav-item">
+          <a class="nav-link" href="visitors.html">Visitors</a>
+        </li>
+
+        <!-- Contact -->
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+<main class="container my-5">
+  <h1 class="mb-4 text-center">Local Festivals</h1>
+  <p class="lead text-center">Experience the heart of Macon County through vibrant festivals celebrating our music, food, history, and mountain culture.</p>
+
+  <div class="row g-4 mt-4">
+    <div class="col-md-4">
+      <div class="festival-card">
+        <img src="img/gorkic-taradi-L5XcSxKiT08-unsplash.jpg" alt="Fall Festival in Franklin" class="festival-img img-fluid w-100">
+        <div class="p-3">
+          <h5 class="fw-bold">Franklin Fall Festival</h5>
+          <p>Date: October 12–14, 2025</p>
+          <p>Downtown Franklin comes alive with music, crafts, food trucks, and a classic car show.</p>
+          <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">More Info</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="festival-card">
+        <img src="img/pexels-tyler-wilby-1389317-24562724.jpg" alt="Mountain Music Festival" class="festival-img img-fluid w-100">
+        <div class="p-3">
+          <h5 class="fw-bold">Mountain Music Fest</h5>
+          <p>Date: July 20, 2025</p>
+          <p>Celebrate bluegrass and folk traditions with live performances and local vendors in the Highlands.</p>
+          <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">More Info</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="festival-card">
+        <img src="img/pexels-tim-douglas-6210985.jpg" alt="Apple Festival" class="festival-img img-fluid w-100">
+        <div class="p-3">
+          <h5 class="fw-bold">Apple Festival</h5>
+          <p>Date: September 7–8, 2025</p>
+          <p>Enjoy fresh mountain apples, homemade pies, live demos, and family-friendly fun!</p>
+          <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">More Info</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="bg-light p-4 rounded mt-5">
+    <h3>Want to Get Involved?</h3>
+    <p>We welcome volunteers, performers, and vendors! Help us make Macon County festivals memorable.</p>
+    <a href="#" class="btn btn-success rounded-pill">Sign Up to Volunteer</a>
+    <a href="#" class="btn btn-outline-primary rounded-pill ms-2">Apply as a Vendor</a>
+  </section>
+  <div class="row align-items-start my-5">
+    <!-- Карусель слева -->
+    <div class="col-md-6">
+      <div id="festivalGallery" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/pexels-souvenirpixels-1486976.jpg" class="d-block w-100" alt="Festival crowd dancing" style="max-height: 350px; object-fit: cover;">
+          </div>
+          <div class="carousel-item">
+            <img src="img/pexels-calebowensphoto-19320000.jpg" class="d-block w-100" alt="Live music on stage" style="max-height: 350px; object-fit: cover;">
+          </div>
+          <div class="carousel-item">
+            <img src="img/pexels-wal-saravia-68271250-8324003.jpg" class="d-block w-100" alt="Food trucks and families" style="max-height: 350px; object-fit: cover;">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#festivalGallery" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#festivalGallery" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  
+    <!-- Текст справа -->
+    <div class="col-md-6 mt-4 mt-md-0 ps-md-4">
+      <h3>Festival Tips & Info</h3>
+      <ul>
+        <li>Most events are free and family-friendly.</li>
+        <li>Bring cash — some vendors may not accept cards.</li>
+        <li>Parking is available near festival entrances.</li>
+        <li>Follow Macon County’s <a href="#">Facebook page</a> for updates.</li>
+      </ul>
+  
+      <h4 class="mt-4">Festival Locations</h4>
+      <ul>
+        <li>Downtown Franklin – Main Street & Stewart St</li>
+        <li>Highlands Event Park – 25 Music Trail Road</li>
+        <li>Greenway Park – 190 Siler Farm Rd</li>
+      </ul>
+  
+      <h4 class="mt-4">Festival Inquiries</h4>
+      <p> (828) 555-1234<br>
+       <a href="mailto:events@maconnc.org">events@maconnc.org</a></p>
+    </div>
+  </div>
+</main>
+  <footer class="bg-dark text-light text-center py-4 mt-5" style="width: 100%;">
+    <p class="mb-0">&copy; 2025 Macon County. All rights reserved.</p>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

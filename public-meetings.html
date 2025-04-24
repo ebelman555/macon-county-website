@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Public Meetings - Macon County</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- Header/Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Main navigation">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html" aria-label="Macon County Home">
+      <img src="img/logo.png" alt="Macon County official logo" height="70" class="me-2">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+
+        <!-- Home -->
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+
+        <!-- Government Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Government
+          </a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-header">Departments</li>
+            <li><a class="dropdown-item" href="finance.html">Finance</a></li>
+            <li><a class="dropdown-item" href="Public Works.html">Public Works</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li class="dropdown-header">Elected Officials</li>
+            <li><a class="dropdown-item" href="#">County Commissioners</a></li>
+            <li><a class="dropdown-item" href="#">Sheriff’s Office</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Policies</a></li>
+          </ul>
+        </li>
+
+        <!-- Community Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Community
+          </a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-header">Events</li>
+            <li><a class="dropdown-item" href="community.html">Local Festivals</a></li>
+            <li><a class="dropdown-item" href="#">Public Meetings</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li class="dropdown-header">Business Resources</li>
+            <li><a class="dropdown-item" href="#">Licensing Information</a></li>
+            <li><a class="dropdown-item" href="#">Business Grants</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Economic Development</a></li>
+          </ul>
+        </li>
+
+        <!-- Residents -->
+        <li class="nav-item">
+          <a class="nav-link" href="residents.html">Residents</a>
+        </li>
+
+        <!-- Visitors -->
+        <li class="nav-item">
+          <a class="nav-link" href="visitors.html">Visitors</a>
+        </li>
+
+        <!-- Contact -->
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container my-5">
+  <h1 class="text-center mb-4">Upcoming Public Meetings</h1>
+  <p class="lead text-center">Stay informed and involved. Below is the schedule of upcoming public meetings in Macon County.</p>
+
+  <div class="d-flex justify-content-end mb-3">
+    <input type="text" id="searchInput" class="form-control" placeholder="Search meetings...">
+  </div>
+
+  <div class="table-responsive">
+    <table class="table table-striped" id="meetingsTable">
+      <thead class="table-dark">
+        <tr>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Location</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>April 28, 2025</td>
+          <td>6:00 PM</td>
+          <td>Macon County Courthouse, Room 102</td>
+          <td>Board of Commissioners - Budget Planning Workshop</td>
+        </tr>
+        <tr>
+          <td>May 3, 2025</td>
+          <td>10:00 AM</td>
+          <td>Franklin Town Hall</td>
+          <td>Public Hearing on Road Maintenance Improvements</td>
+        </tr>
+        <tr>
+          <td>May 10, 2025</td>
+          <td>5:30 PM</td>
+          <td>Library Community Room</td>
+          <td>Community Input Session: Parks & Recreation Expansion</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <section class="bg-light p-4 mt-5 rounded">
+    <h3>Access Meeting Minutes & Agendas</h3>
+    <p>
+      All past and upcoming agendas, minutes, and meeting packets are available for public review.
+      <br><a href="https://maconnc.org/board-minutes.html" target="_blank">View Minutes and Agendas</a>
+    </p>
+
+    <h4 class="mt-4">Contact for Meeting Questions</h4>
+    <p>📞 (828) 555-4321<br>
+    ✉️ <a href="mailto:meetings@maconnc.org">meetings@maconnc.org</a></p>
+  </section>
+</main>
+
+<footer class="bg-dark text-light text-center py-4 mt-5 w-100">
+  <p class="mb-0">&copy; 2025 Macon County. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById("searchInput").addEventListener("keyup", function () {
+    var filter = this.value.toLowerCase();
+    var rows = document.querySelectorAll("#meetingsTable tbody tr");
+
+    rows.forEach(function (row) {
+      var text = row.innerText.toLowerCase();
+      row.style.display = text.includes(filter) ? "" : "none";
+    });
+  });
+</script>
+</body>
+</html>
